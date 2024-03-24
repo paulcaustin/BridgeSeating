@@ -1,0 +1,33 @@
+#!/usr/bin/perl
+
+
+$c1 = "Copyright 1999, Paul Chamberlain (tif\@pobox.com)\n";
+$c2 = "This notice required on all copies and derivatives\n";
+$h = "|  Table 1  |  Table 2  |  Table 3  " .
+	"|  Table 4  |  Table 5  |  Table 6  |\n";
+$c = "|-----------";
+$l = $c . $c . $c . $c . $c . $c . "|\n";
+
+
+print $c1;
+print $c2;
+print $l;
+print $h;
+print $l;
+
+while (<>) {
+	foreach $table (split) {
+		($a, $b, $c, $d) = split(//, $table);
+		$a = ord(uc($a)) - ord('A') + 1;
+		$b = ord(uc($b)) - ord('A') + 1;
+		$out = $a . "-" . $b;
+		$out = " " x (5-length($out)) . $out;
+		$c = ord(uc($c)) - ord('A') + 1;
+		$d = ord(uc($d)) - ord('A') + 1;
+		$out .= " " . $c . "-" . $d;
+		$out .= " " x (11-length($out));
+		print "|", $out;
+	}
+	print "|\n";
+	print $l;
+}

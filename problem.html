@@ -1,0 +1,99 @@
+<title>The Chamberlain Bridge Problem Description</title>
+<h1>The Bridge Problem Description</h1>
+The original problem, as I remember it, was described by
+my mother.  She liked to play bridge.  There are groups
+of women that get together and play for small prizes.
+Typically they have 24 people and they play 8 games of bridge.
+They have some scoring convention to decide who wins but
+that part isn't important in this discussion.
+<p>
+In bridge, four people sit at each table and play a game.
+The people that sit across from each other are partners.
+So there are two "teams" at each table.  It's not important
+to the scoring about who plays with who or who plays
+against who, but the ladies consider this to be really
+a social event rather than a competition.  If some thought
+isn't put into these seating arrangements the ladies will
+complain that they end up playing the same people all the
+time.
+<p>
+Our challenge then, simply enough, was to come up with a
+seating chart for each of the eight games where everyone
+gets to play a game with everyone else.
+<p>
+This turned out to be much more difficult than a quick
+thought would lead you to believe.  Sitting down with a
+pencil and a piece of paper and trying it turns out to
+be an exercise in frustration.
+<p>
+The first week or so of searching for a solution consisted
+of writing a program to go through each and every possible
+seating arrangement and try to find a perfect arrangement.
+I soon realized that this problem was quite large.  A friend
+of mine, who was thrilled to be able to use mathematical
+equations for a real world question, convinced me that there
+could be no perfect arrangement.
+<p>
+The ladies were obviously not happy with the way some
+bridge gatherings were run and I'm sure they weren't
+really concerned with wether or not we could acheive
+the perfect seating arrangement.  So we had to try for
+something better than ladies trying to pick a seat or
+even random seat assignments.
+<h2>How to score an arrangement</h2>
+The first step was to devise a way to compare seating
+arrangements and decide which was better.  We have
+come to agree on minimizing the number of times someone
+plays with someone they have already played with.  That
+is, if Elizabeth played with (or against) Janice in two
+different games, it is tallied as one point, and you
+should strive for a minimum number of points.  If they
+play with (or against) each other in three different
+games, it is tallied as two points.  I call each of
+these points a "bad seating".
+<p>
+Note, in the above description, both Elizabeth and
+Janice are displeased with their seats, but we still
+count it as one point.  To calculate the score I really
+build a <a href="scoring.html">rectangular table</a>
+with the players listed
+across the top and the players listed down the side.
+An ideal solution would have nothing but 1's in it,
+but that is impossible.  I get my score by examining
+each value in the table.  If the value is greater
+than one, than the score is equal to the number minus
+one, otherwise it is zero.  Of course, the table is
+symmetric about the diagonal, so I divide by two --
+just for convention.
+<p>
+If you're really quick, you'll notice that a player
+can play with three other players for each of the
+eight games, which makes twenty-four players.  Since
+there are only 23 other players, there will be at
+least one player that he plays with twice.  For every
+player that he does not play with, there will be one
+additional time that he plays with somebody that he
+has already played with.  So, the number of points
+is also equal to twenty-four plus the number of
+zeros in the table, then divide by two.
+<h2>Fickle women, that wasn't good enough</h2>
+For quite a while the ladies that my mother played with,
+used one of the seating arrangements that I had designed.
+But my mother mentioned that the bridge players didn't like
+being "player 19" on the seating arrangement because that
+player sits at the same table too much.  She also pointed
+out that having the same partner twice was a major no-no.
+<p>
+Okay fine.  When a player sits at the same table more than
+once, I now call it a "bad tabling".  When a player partners
+with the same player more than once, I now call it a
+"bad partnering".  I still don't know the relative badness
+of the three bad things but I have tweaked my recent attempts
+to at least not ignore these negative things when looking
+for a good "score".
+<hr>
+<a href="index.html">Back</a>,
+<a href="tried.html">What has been tried</a>
+<br clear=all><hr><address>
+<a href="/~tif/">Paul Chamberlain</a><br>
+<a href="mailto:paul@paulcc.com">paul@paulcc.com</a></address>

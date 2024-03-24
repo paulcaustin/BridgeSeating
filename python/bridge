@@ -1,0 +1,180 @@
+#!/opt/local/bin/python
+
+import random
+
+class population:
+	"""The GA implementation of a collection of species"""
+	def __init__(self,factory):
+		self.factory = factory
+	def setup(self, n):
+		self.size = n
+		self.pop = [None] * n
+		for i in range(self.size):
+			new = self.factory.build()
+			self.insert(new)
+	def winner(self):
+		return self.pop[0]
+	def iterate(self):
+		"""Breed a new child"""
+		# This random picker can be improved upon
+		pos1 = random.randrange(self.size-2)+1
+		pos2 = random.randrange(pos1)
+
+		new = self.factory.childof(self.pop[pos1], self.pop[pos2])
+		pos = self.insert(new)
+		# if new.score() < self.pop[pos2].score():
+		# print "New child at position:", pos, "Score:", new.score()
+		# print "p1=", p1, "\n"
+		# print self.pop[p1].format()
+		# print "p2=", p2, "\n"
+		# print self.pop[p2].format()
+		# print "new child\n"
+		# print new.format()
+	def insert(self, species):
+		pos = 0
+		score = species.score()
+		# print "Insert: current length=", len(self.pop), " max=", self.size, "\n"
+		while pos < len(self.pop)-1 and self.pop[pos] and score > self.pop[pos].score(): pos += 1
+		# print "Stopped at pos=", pos, "\n"
+		if pos >= self.size: return pos;
+		if pos < len(self.pop)-1:
+			# if len(self.pop) == self.size: del(self.pop[len(self.pop)-1])
+			self.pop[pos+1:len(self.pop)-1] = self.pop[pos:len(self.pop)-2]
+		self.pop[pos] = species
+		return pos
+	def printall(self):
+		for index in range(self.size):
+			print self.pop[index].format()
+
+class bridge_species_factory:
+	"""Knows how to create species with the right config"""
+	def __init__(self, species):
+		"""Configure the factory"""
+		self.species = species
+		self.games = 6
+		self.players = 24
+		self.ppert = 4
+		self.maxmutates = 40
+	def build(self):
+		"""How to create a new random species"""
+		out = self.species(self.games, self.players, self.ppert)
+		out.randomize()
+		return out
+	def childof(self, p1, p2):
+		"""How to create a new child species with two parents"""
+		out = self.species(self.games, self.players, self.ppert)
+		for i in range(self.games):
+			if random.randrange(2):
+				out.setgame(i, p1.getgame(i))
+			else:
+				out.setgame(i, p2.getgame(i))
+		mutates = random.randrange(self.maxmutates)
+		for i in range(mutates): out.mutate()
+		# print "Child mutates:", mutates
+		return out
+
+class bridge_species:
+	"""A single set of traits to be tested"""
+	def __init__(self, games, players, ppert):
+		"""Create an empty 'organism'"""
+		self.games = games
+		self.players = players
+		self.ppert = ppert
+		self.dna = [None] * games
+		self.score_cache = -1
+	def randomize(self):
+		"""Initialize organism to random traits"""
+		self.dna = [ self.randomgame() for i in range(self.games) ]
+	def randomgame(self):
+		"""Create one game worth of random traits"""
+		all = [ i for i in range(self.players) ]
+		out = []
+		for i in range(self.players):
+			pick = random.randrange(len(all))
+			out.append(all[pick])
+			del all[pick]
+		return out
+	def getgame(self, n):
+		"""Return one game worth of traits"""
+		return self.dna[n]
+	def setgame(self, n, gamespec):
+		"""Set one game worth of traits"""
+		self.dna[n] = gamespec[:]
+	def mutate(self):
+		"""Perform one mutation"""
+		t1 = random.randrange(self.players);
+		t2 = random.randrange(self.players);
+		if t1 == t2: return
+		g = random.randrange(self.games);
+		# print "Mutate game", g, ": players ", t1, " and ", t2
+		# print "Before:", self.dna[g][t1], self.dna[g][t2]
+		self.dna[g][t1], self.dna[g][t2] = self.dna[g][t2], self.dna[g][t1]
+		# print "After:", self.dna[g][t1], self.dna[g][t2]
+	def score(self):
+		if self.score_cache >= 0: return self.score_cache
+		score = self.score_partners() + self.score_with()
+		self.score_cache = score
+		return score
+	def score_with(self):
+		"""Calculate score of who plays with who"""
+		np = self.players	# Shortcut
+		tally = [0] * (np * np);
+		score = 0
+		for g in range(self.games):
+			for table in range(0, np, self.ppert):
+				for pos1 in range(self.ppert):
+					for pos2 in range(self.ppert):
+						if pos1 != pos2:
+							p1 = self.dna[g][table + pos1]
+							p2 = self.dna[g][table + pos2]
+							score += tally[p1*np + p2]
+							tally[p1*np + p2] += 1
+		return score
+	def score_partners(self):
+		"""Calculate score of who partners with who"""
+		np = self.players	# Shortcut
+		tally = [0] * (np * np);
+		score = 0
+		for g in range(self.games):
+			for pos1 in range(0, np, self.ppert):
+				# Get players at the table
+				p1 = self.dna[g][pos1]
+				p2 = self.dna[g][pos1+1]
+				p3 = self.dna[g][pos1+2]
+				p4 = self.dna[g][pos1+3]
+				# Get indexes for teams at the table
+				t1 = p1 * np + p2
+				t2 = p2 * np + p1
+				t3 = p3 * np + p4
+				t4 = p4 * np + p3
+				# Score any teams already played
+				score += tally[t1] + tally[t2] + tally[t3] + tally[t4]
+				# Record the current teams
+				tally[t1] += 1
+				tally[t2] += 1
+				tally[t3] += 1
+				tally[t4] += 1
+		return score
+	def format(self):
+		"""Format this organisms traits for output"""
+		out = "Score: {:d}\n".format(self.score())
+		map = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+		for i in range(self.games):
+			for c in range(self.players):
+				out += map[self.dna[i][c]]
+			out += "\n"
+		return out
+
+def main():
+	pop = population(bridge_species_factory(bridge_species))
+	pop.setup(50)
+	for i in range(1000000):
+		pop.iterate()
+		# print "Top score: ", pop.winner().score()
+	print "\n"
+	print pop.winner().format()
+	print "Bad partners: ", pop.winner().score_partners()
+	print "Bad with: ", pop.winner().score_with()
+
+if __name__ == "__main__":
+	main()

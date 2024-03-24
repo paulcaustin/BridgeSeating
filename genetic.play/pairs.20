@@ -1,0 +1,80 @@
+Sun Oct 13 18:00:49 CDT 2002	Running ./pairs -n 20 -g 19
+Population = 100	MaxIter = 100000000
+TermCount = 1000000	MaxSwap = 10
+Opt = 0
+Iteration Best Cnt  Score       Mutates   Cross-Ovr Inserts
+        0         1 700,  0         1         1         1 890   1
+    10000       377 320,  0    164975     10000      1447 320   1
+    20000      1225 200,  0    179533     10000       662 200   1
+    30000      2626 160,  0    187427     10000       307 160   1
+    40000      5699 140,  0    189441     10000       209 140   1
+    50000      2474 110,  0    192004     10000       160 110   1
+    60000      1509  80,  0    191660     10000       155  80   1
+    70000     11509  80,  0    192306     10000       138  80   1
+    80000      1384  60,  0    194034     10000        85  60   1
+    90000      6333  20,  0    189664     10000       247  20   1
+   100000     16333  20,  0    193529     10000        73  20   1
+   110000     26333  20,  0    194303     10000        23  30   1
+   120000     36333  20,  0    194151     10000        19  20   1
+   130000     46333  20,  0    192709     10000        25  20   1
+   140000     56333  20,  0    197929     10000         4  20   1
+   150000     66333  20,  0    199411     10000         5  20   1
+   160000     76333  20,  0    199392     10000         2  20   1
+   170000     86333  20,  0    199316     10000         3  20   1
+   180000     96333  20,  0    199430     10000         6  20   1
+   190000    106333  20,  0    199089     10000         4  20   1
+   200000    116333  20,  0    199088     10000         6  20   1
+   210000    126333  20,  0    199164     10000         4  20   1
+   220000    136333  20,  0    199107     10000         7  20   1
+   230000    146333  20,  0    198594     10000         9  20   1
+   240000    156333  20,  0    198804     10000         8  20   1
+
+   247797         0   0,  0    155067      7797         8  *
+
+
+Total Time = 353 seconds; Search Time = 350 seconds.
+Best Configuration:
+AB CD EF GH IJ KL MN OP QR ST
+PF CM NI KG AL SD OQ JR ET HB
+AO NQ LH CB RP GS ID JK ME FT
+FG EL AP KS RM DB QJ CI OT HN
+OK LC TP DH AG FN JS BI MQ ER
+MT IL SF RN DA BO QK HE GC JP
+RG BP SO KC HI NE DQ TJ FA LM
+IR GT QS MB HA OE JF PC DK NL
+LS PK NB EJ OF MD QG TH CR AI
+PM DF KA GB QL CS NJ RT HO IE
+QF RS KN TI HP BJ MO AC LD EG
+DR OJ FM IQ KB SH GN TC PL EA
+DJ CO RB QP AS MH IG LF TN KE
+MK GP DE FR IS CJ BL QH AT NO
+CF BE OG DP SN HR KI AQ TL JM
+KR TD BQ GM HF AN LJ CE SP OI
+IM GD AR OL TK JH PN SE CQ BF
+IF OD EP HK CN SB JG AM LR QT
+LG EQ HC TB OR FK PI AJ ND MS
+
+Score = 0
+Old Score = 0
+Bad partnerings
+  A B C D E F G H I J K L M N O P Q R S T 
+A . 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+B 1 . 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+C 1 1 . 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+D 1 1 1 . 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+E 1 1 1 1 . 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+F 1 1 1 1 1 . 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+G 1 1 1 1 1 1 . 1 1 1 1 1 1 1 1 1 1 1 1 1
+H 1 1 1 1 1 1 1 . 1 1 1 1 1 1 1 1 1 1 1 1
+I 1 1 1 1 1 1 1 1 . 1 1 1 1 1 1 1 1 1 1 1
+J 1 1 1 1 1 1 1 1 1 . 1 1 1 1 1 1 1 1 1 1
+K 1 1 1 1 1 1 1 1 1 1 . 1 1 1 1 1 1 1 1 1
+L 1 1 1 1 1 1 1 1 1 1 1 . 1 1 1 1 1 1 1 1
+M 1 1 1 1 1 1 1 1 1 1 1 1 . 1 1 1 1 1 1 1
+N 1 1 1 1 1 1 1 1 1 1 1 1 1 . 1 1 1 1 1 1
+O 1 1 1 1 1 1 1 1 1 1 1 1 1 1 . 1 1 1 1 1
+P 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 . 1 1 1 1
+Q 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 . 1 1 1
+R 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 . 1 1
+S 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 . 1
+T 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 .

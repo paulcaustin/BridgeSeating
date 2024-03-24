@@ -1,0 +1,55 @@
+#!/usr/bin/perl
+
+@names = (France, England,
+"Middle East", Spain, Italy, Norway, Mexico, Orient);
+
+@players = ();
+while (<>) {
+	chop;
+	$table = 0;
+
+	foreach $c (split(//, $_)) {
+		if ($c eq ' ') {
+			$table++;
+			next;
+		}
+		$i = "bad";
+		$i =  0 + ord($c) - ord('A') if ($c ge 'A' && $c le 'Z');
+		$i = 26 + ord($c) - ord('a') if ($c ge 'a' && $c le 'z');
+		$i = 52 + ord($c) - ord('0') if ($c ge '0' && $c le '9');
+		$i = 62 + ord($c) - ord('#') if ($c ge '#' && $c le '$');
+
+		push(@{$players[$i]}, $table);
+	}
+	print "\n";
+}
+
+for ($i = 0; $i < 64; $i++) {
+	$num = $i + 1;
+	# print "<p style='page-break-inside: avoid'>";
+	print "<nobr>";
+	print "<table><tr><td>\n";
+	print "<table border=1><tr><th colspan=8>\n";
+	print "Participant $num";
+	print "</th></tr><tr>\n";
+	print "<td><center>Round 1</center></td>";
+	print "<td><center>Round 2</center></td>";
+	print "<td><center>Round 3</center></td>";
+	print "<td><center>Round 4</center></td>";
+	print "<td><center>Round 5</center></td>";
+	print "<td><center>Round 6</center></td>";
+	print "<td><center>Round 7</center></td>";
+	print "<td><center>Round 8</center></td>";
+	print "</tr><tr>\n";
+	foreach $table (@{$players[$i]}) {
+		$tablename = $names[$table];
+		print "<td><center>$tablename</center></td>\n";
+	}
+	print "</tr></table><small>\n";
+	print "Rotation by Paul Chamberlain (tif\@tifster.com), ";
+	print "Senior Programmer looking for work.\n";
+	print "</small>";
+	print "</td></tr></table>\n";
+	print "</nobr><br>\n";
+	#print "<p>&nbsp;</p>\n";
+}

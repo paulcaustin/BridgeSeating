@@ -1,0 +1,149 @@
+Population = 500	MaxIter = 100000000
+TermCount = 5000000	MaxSwap = 200
+Opt = 0
+Iteration Best Cnt  Score   Mutates   Cross-Ovr Inserts
+        0         1  20,  0         0         1         1 3280   1 200
+    10000     10001  20,  0     17525     10000      4202 920   1 200
+    20000     20001  20,  0     16233     10000      4174  20   1 101
+    30000     30001  20,  0     25239     10000       229  30   1 51
+    40000     40001  20,  0     27310     10000       175  30   1 26
+    50000     50001  20,  0     28277     10000       100  30   2 14
+    60000     60001  20,  0     28030     10000       214  20   1 8
+    70000     70001  20,  0     28731     10000        15  20   2 5
+    80000     80001  20,  0     28569     10000        10  30   2 5
+    90000     90001  20,  0     28547     10000        13  20   2 5
+   100000    100001  20,  0     28277     10000        21  30   2 5
+   110000    110001  20,  0     28178     10000        15  30   2 5
+   120000    120001  20,  0     27900     10000        19  30   2 5
+   130000    130001  20,  0     27733     10000        17  20   2 5
+   140000    140001  20,  0     27632     10000        21  30   1 5
+   150000    150001  20,  0     27288     10000        20  20   1 5
+   160000    160001  20,  0     27043     10000        21  30   1 5
+   170000    170001  20,  0     26568     10000        22  30   1 5
+   180000    180001  20,  0     26520     10000        33  20   1 5
+   190000    190001  20,  0     25999     10000        23  30   1 5
+   200000    200001  20,  0     26135     10000        16  20   1 5
+   210000    210001  20,  0     26038     10000        31  20   2 5
+   220000    220001  20,  0     25541     10000        22  20   2 5
+   230000    230001  20,  0     25376     10000        35  20   1 5
+   240000    240001  20,  0     24945     10000        90  20   1 5
+   250000    250001  20,  0     28458     10000        39  20   1 5
+   260000    260001  20,  0     29521     10000         2  20   1 5
+   270000    270001  20,  0     29431     10000         5  20   1 5
+   280000    280001  20,  0     29486     10000         2  20   1 5
+   290000    290001  20,  0     29377     10000         1  20   1 5
+   300000    300001  20,  0     29469     10000         3  20   1 5
+   310000    310001  20,  0     29404     10000         0 999999   0 5
+   320000    320001  20,  0     29391     10000         0 999999   0 6
+   330000    330001  20,  0     29468     10000         2  20   1 7
+   340000    340001  20,  0     29426     10000         1  20   1 7
+   350000    350001  20,  0     29385     10000         0 999999   0 7
+   360000    360001  20,  0     29493     10000         1  20   1 8
+   370000    370001  20,  0     29348     10000         1  20   1 8
+   380000    380001  20,  0     29360     10000         1  20   1 8
+   390000    390001  20,  0     29438     10000         0 999999   0 8
+   400000    400001  20,  0     29434     10000         0 999999   0 9
+   410000    410001  20,  0     29504     10000         0 999999   0 10
+   420000    420001  20,  0     29408     10000         1  20   1 11
+   430000    430001  20,  0     29449     10000         1  20   2 11
+   440000    440001  20,  0     29407     10000         1  20   2 11
+   450000    450001  20,  0     29398     10000         2  20   1 11
+   460000    460001  20,  0     29384     10000         0 999999   0 11
+   470000    470001  20,  0     29412     10000         1  20   1 12
+   480000    480001  20,  0     29434     10000         0 999999   0 12
+   490000    490001  20,  0     29386     10000         1  20   1 13
+   500000    500001  20,  0     29425     10000         0 999999   0 13
+   510000    510001  20,  0     29385     10000         0 999999   0 14
+   520000    520001  20,  0     29385     10000         0 999999   0 15
+   530000    530001  20,  0     29398     10000         0 999999   0 16
+   540000    540001  20,  0     29425     10000         0 999999   0 17
+   550000    550001  20,  0     29345     10000         0 999999   0 18
+   560000    560001  20,  0     29435     10000         2  20   2 19
+
+   562477         0   0,  0      7267      2477         3  *
+
+
+Total Time = 4735 seconds; Search Time = 4734 seconds.
+Best Configuration:
+AB jW lL UF QG Va Of bM RY Ii cP Kd TE CH XD eg kN hZ JS
+AD XK il YV FJ HO gG Ne PM Ef BW Sd UZ ab TC RQ Ih Lj kc
+AJ IO Gh Ma EV kH SK cU RB DT ed lf NW ZL Pi Cb QF gj XY
+AL Pd Ni jH aR SO gV FW cf lB ZI DM XT YC Ub eE Qk JG hK
+Ai OD LT Zd hb CJ BX HN aW Pk eU fg jG MS cE KQ lV FR IY
+BV HA LO ca Pg GZ YS IJ NX ED Ul Wk Rj db ih ef QC MK TF
+DG BP UO dC fI KF aH kY JL gQ Se RW XZ jb cN lE Mh AT Vi
+DI eG ZV Oh SN jM lH cY gR Jb LW Pa dE BQ AF Xi Ck Kf TU
+DR Hc hT NL eJ bg MG IP af EB Yi QX KZ FO AS Wd Uk lj CV
+EK kT ic De ga FB NY SQ CM OX PA UH Lh Wb Gd Zf IR Vj Jl
+GI PJ fT cl Za YQ gh eX Rd iM Sj CA Kb ON WV UE LB Dk FH
+HB gN lF ZD IE QL Td YP CG Sc VJ WA ha jU bX Oe RM iK fk
+He iE Dh Xf KJ jF NT PR QO CL MV aA BG ZY UW kb gl dc SI
+IH Kl ad Fb jf Ti VN GP Dc RX WM UL QZ gJ OA eC Sh kB EY
+JO Hb KU cG IV kd gE TM ai YA PN WQ BZ Xh jD eL Rl SC fF
+LS BJ IF GY lM WH cZ KP eR OT gC iU dV Db QN aE kX jA hf
+ME Cf ZO XU id aL YD VP kJ RT jK SG NB Qb gA eF Hh cI Wl
+MX CF aN gH Jh AI jB RZ OK TQ UV kL ce lP Yd Df GW iS bE
+Mf Bb dF KR QH Ak EO hU Di Tl gX CZ NI aJ LY eP SW cj VG
+NG hd WZ BI QJ cA VO CR Ej YU iH Kg bT FM XL Pf al SD ke
+NJ KH Gk gD fY EP Ad XC LV Sl Fh BM RU ZT Oi ej Qa IW bc
+Nf IL OB GU WJ he Ek FX QP gS VH Mc Ri aC TY DK dl Zj Ab
+PL EA JM HZ fG ij eY bS Kk TV UD Oc IX aB Nd WC gF Rh lQ
+PX Sk Wc EN fJ Oj Ci eZ bR Ud FV lY GT gM QA KI Bh HL aD
+Pj eI Dd GK BC Af NF kZ Ug lb EJ TH hc iQ aO VS WX MY LR
+UB DQ SH iJ eT cL aj fd GE RN IM YK hC kg XV WO bP Al ZF
+XG bi DN YJ MH kl aF OR hj UP KA SB cT WE Qd eV gZ CI fL
+Yb CD jN WT AM EF Jc hP OG SU Ka HR Vk IQ Xd Bf gL iZ el
+ZJ IU SR PW DB dL VA Qj lX gT aG NK Mk Fc HE hY OC if eb
+bO LG EQ HD CK ka Bc ei Nl dg Vh AR WY PF XS Uf MZ Ij TJ
+cV UA eW Zb Od jJ GR MN ki SP hE Ig Cl XH TB Qf DF Ya KL
+cg TI aX Ae DP YB hN Ol QM SZ kR VK Hd Fi bG Wf LE Cj UJ
+dM aS EC FG Bi Ik UN PH Xj KT gW cR Qe Lb OY fV Ah JD Zl
+eB aT HJ MU iL SF Ib CP Qc kO fR ZN Yg WK DV AG XE dj lh
+jT Og ER VQ Nb Cc Gi PZ FL KB hk YH Ua WD XA Sf dJ Me Il
+jY Ia PT Wh JR Ke dB OM NC SE ig ZA Vb LD Fk Gl Hf cX QU
+jk RV LM Id YF AN ea JX fb ST Wi CU lD OP Qh GH Kc EZ Bg
+
+Score = 0
+Old Score = 0
+Bad partnerings
+  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z a b c d e f g h i j k l 
+A . 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+B 1 . 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+C 1 1 . 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+D 1 1 1 . 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+E 1 1 1 1 . 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+F 1 1 1 1 1 . 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+G 1 1 1 1 1 1 . 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+H 1 1 1 1 1 1 1 . 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+I 1 1 1 1 1 1 1 1 . 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+J 1 1 1 1 1 1 1 1 1 . 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+K 1 1 1 1 1 1 1 1 1 1 . 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+L 1 1 1 1 1 1 1 1 1 1 1 . 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+M 1 1 1 1 1 1 1 1 1 1 1 1 . 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+N 1 1 1 1 1 1 1 1 1 1 1 1 1 . 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+O 1 1 1 1 1 1 1 1 1 1 1 1 1 1 . 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+P 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 . 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+Q 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 . 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+R 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 . 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+S 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 . 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+T 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 . 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+U 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 . 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+V 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 . 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+W 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 . 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+X 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 . 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+Y 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 . 1 1 1 1 1 1 1 1 1 1 1 1 1
+Z 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 . 1 1 1 1 1 1 1 1 1 1 1 1
+a 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 . 1 1 1 1 1 1 1 1 1 1 1
+b 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 . 1 1 1 1 1 1 1 1 1 1
+c 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 . 1 1 1 1 1 1 1 1 1
+d 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 . 1 1 1 1 1 1 1 1
+e 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 . 1 1 1 1 1 1 1
+f 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 . 1 1 1 1 1 1
+g 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 . 1 1 1 1 1
+h 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 . 1 1 1 1
+i 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 . 1 1 1
+j 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 . 1 1
+k 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 . 1
+l 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 .
+4632.51user 1.84system 1:18:54elapsed 97%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+0outputs (546major+35minor)pagefaults 0swaps

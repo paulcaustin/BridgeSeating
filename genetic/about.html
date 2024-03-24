@@ -1,0 +1,42 @@
+<title>Using Genetic Algorithms on The Chamberlain Bridge Problem</title>
+<h1>Using Genetic Algorithms</h1>
+Put simply, a
+<a href="http://www.yahoo.com/Science/Computer_Science/Algorithms/Genetic_Algorithms/">
+Genetic Algorithm</a> creates "creatures", sorts
+them by most likely to survive and then creates mutations and
+combinations of the existing creatures to create new ones.
+The most successful are used (as in natural selection) in the
+mutations and the least successful die.
+<p>
+In <a href="./">my program</a>, a creature is an 8-game 6-table setup.  A
+combination of two creatures uses a few games from each setup.
+A mutation swaps two seating positions within a game.  These
+definitions were arrived at with almost no thought but upon
+running it, I came up with a solution which had
+<a href="results.html">31 bad seatings</a>
+in about one day!  This was incredible but it was difficult to
+reproduce, difficult to improve on, and not much better than 33.
+<p>
+While braggin to my mom about these amazing results,
+she mentioned that the bridge players didn't like being
+"player 19" on the current seating arrangement because he
+sits at the same table too much.  She also pointed out that
+having the same partner twice was a major no-no.
+<p>
+The solutions that I had created with my Genetic Algorithm
+scored 31 and 32 but were pretty bad in terms of bad partnerings
+and what I have come to call "bad tablings" -- repeatedly sitting
+at the same table.
+<p>
+To try to eliminate these problems,
+I modified my scoring algorithm to score 5 points for the
+bad seating, 10 for bad partnering, and 2 for bad tabling.
+<p>
+Starting with completely random creatures, and continuously
+mutating through several million generations I have not yet
+been able to do significantly better than the setup with 33
+bad seatings.
+<p>
+After many iterations of tweaking the algorithm and restarting
+with a new set of random creatures I came up with a great idea.
+I could <a href="../genetic2/about.html">spike the soup</a>.

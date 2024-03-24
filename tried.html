@@ -1,0 +1,131 @@
+<title>The Chamberlain Bridge Problem</title>
+<h1>The Chamberlain Bridge Problem</h1>
+I have used this problem as a testing ground for a variety
+of problem solving techniques.  In all cases I have labeled
+the players A-X to simplify representation.
+
+<h2>The paper and pencil method</h2>
+Initially, my mother tried to solve the problem with paper,
+pencil, and a big eraser.  I don't recall the exact score
+but it was clear that there was more to this problem than
+meets the eye.  The natural method of doing this is to
+make a table of 24 rows and 24 columns.  Label them any
+way you like but they correspond to the 24 players.
+<p>
+Using only the lower-left half of the table, choose four
+players to play at a table in the first game.  Find the
+six boxes that are intersections of the four players
+and write a 1 in each box.  Then find the next four
+players for the next table and do the same, and so
+on until you have done all 24 players.  Then start
+again but write a 2 in each box.  Anytime you write
+two numbers in the same box is a "bad seating" and counts
+one point against you.
+<p>
+Attempts to refine the table quickly become very
+frustrating and complicated.  My experience is
+that picking the groups in any orderly fashion
+seems to be counter-productive and that ANY random
+order would be more likely to be successful.
+
+<h2>Random Selection</h2>
+I didn't spend any time on random selection but
+my father tried it for a while and decided that
+it would never work.
+
+<h2>Brute force</h2>
+I tried implementing an exhaustive search for the best
+solution.  I even tried to eliminate obvious wastes of
+time that show up as a result of symettries in the
+problem.  I noticed that this was moving very slowly
+and tried to estimate the size of the problem.
+<p>
+I wrote a script for <em>bc</em> -- the Unix arbitrary
+precision calculator to 
+<a href="showall/bridge.bc">
+calculate the size of the solution space</a>.  The
+script says that the number of possible ways to seat
+24 people at 6 tables is given by this expression where
+each table is represented by a Combination of N things
+taken M at a time:
+<blockquote>
+<sub>24</sub>C<sub>4</sub> *
+<sub>20</sub>C<sub>4</sub> *
+<sub>16</sub>C<sub>4</sub> *
+<sub>12</sub>C<sub>4</sub> *
+<sub>8</sub>C<sub>4</sub> *
+<sub>4</sub>C<sub>4</sub>
+</blockquote>
+which evaluates to:
+<blockquote>
+3246670537110000
+</blockquote>
+And to pick any set of 8 of these would be
+<blockquote>
+306185934084510823129302222161577624553431326207206900843538687047438038575560093872988377112293067944802385719050986250
+</blockquote>
+<p>
+Obviously, I wasn't going to be able to try each of
+these during this century.
+<h2>The look-ahead strategy</h2>
+I eventually arrived at the concept of picking each table's
+seating arrangement by looking at what problem's my choice
+would cause while selecting the next table's seating.  This
+look-ahead strategy resembled that used by game-playing
+strategy programs.  Despite complications unique to our
+challenge I eventually had
+<a href="lookahead/">a program that could look-ahead</a>
+about 6 tables (a whole bridge-game) ahead and still
+be quick enough to make some progress.  After weeks of CPU
+time, with frequent restarts I arrived at a solution which
+scored <a href="lookahead/results.html">33 bad seatings</a>.
+</a>
+This seating arrangement was used for quite a while by my
+mother's bridge club.
+<h2>Simulated Annealing</h2>
+Later, I tried something called
+<a href="http://www.yahoo.com/Science/Computer_Science/Algorithms/Simulated_Annealing/">
+Simulated Annealing</a>.
+This algorithm is modeled after the
+shaping and cooling, shaping and cooling used by a blacksmith.
+A small change and a large change are defined.  A mixture of
+the two are used to try to locate an optimum in the solution
+space.  As the program progresses, less and less of the large
+changes are used.  This is supposed to zero in on a global
+optimum but
+<a href="sim_anneal/">my attempt at simulated annealing</a>
+failed miserably.  I'm sure the definition
+of a small change and a large change are key to the success of
+this algorithm so perhaps my choices were unsuitable.
+<h2>Genetic Algorithm</h2>
+I stumbled across another method of finding an optimal
+solution in a huge solution space.  A
+<a href="http://www.yahoo.com/Science/Computer_Science/Algorithms/Genetic_Algorithms/">
+Genetic Algorithm</a>
+is used to solve the typical example problem of the
+<a href="genetic/tsp/">Traveling Salesman</a>
+(Find the shortest path for a salesman to visit each
+of 100 cities).  I realized that I could use the
+<a href="genetic/about.html">Genetic Algorithm for my bridge problem</a>.
+I was able to generate a solution which scored
+<a href="genetic/results.html">31 bad seatings</a>
+in less than a day!
+<h2>Spiked Genetic Algorithm</h2>
+[At this time I modified my scoring algorithm to score 5
+points for the bad seating, 10 for bad partnering, and 2
+for bad tabling.  Although I still refer to my results
+simply by the number of bad seatings.]
+<p>
+I devised an <a href="genetic2/about.html">
+Improved Genetic Algorithm</a> which spikes the
+genetic soup with already successful creatures.
+After repeatedly tweaking and running I came up with a setup
+that has <a href="genetic2/results.html">28 bad seatings</a>,
+no bad partnerings, and just a few bad tablings!
+A <strong>huge</strong> improvement over the original setup.
+<h2>I Challenge you</h2>
+Now, any of you math or programming wizards want to
+see if you can improve on this solution?
+<br clear=all><hr><address>
+<a href="/~tif/">Paul Chamberlain</a><br>
+<a href="mailto:paul@paulcc.com">paul@paulcc.com</a></address>

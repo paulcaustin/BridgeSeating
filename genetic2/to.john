@@ -1,0 +1,76 @@
+From tif Thu Oct 13 15:37:57 1994
+Subject: Bridge problem ... again
+To: JOHNCHAMBER@delphi.com (JOHN CHAMBERLAIN, CORD)
+Date: Thu, 13 Oct 1994 15:37:57 -0500 (CDT)
+In-Reply-To: <01HFA7UE3EBM938YK6@delphi.com> from "JOHN CHAMBERLAIN, CORD" at Jul 29, 94 03:37:40 pm
+X-Mailer: ELM [version 2.4 PL22]
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+Content-Length: 3044      
+Status: RO
+
+Remember the bridge problem?  Dad and I started talking about it
+last weekend and how they're still using my old solution.  I
+told him about my Genetic Algorithm and how it beat it.
+
+We got a copy of the old solution and re-scored it.  It had
+33 occurances of people playing with people that had played
+before and one occurance of someone partnered with the same
+person again (which Mom claims is an absolute no-no).
+
+When I got home I found that I had come up with a 32 and a
+31 but they had bad partnerings too.  I modified my scoring
+algorithm to take partnering into account and also sitting
+at the same table (something else the ladies complain about).
+I made bad "seating" score 5 points, bad "partnering" worth
+10 points, and bad "tabling" worth 1.
+
+If you remember, Genetic Algorithm's create "creatures", sort
+them by most likely to survive and then create mutations and
+combinations of the existing creatures to create new ones.
+The most successful are used (as in natural selection) in the
+mutations and the least successful die.
+
+In my program, a creature is an 8-game 6-table setup.  A
+combination of two creatures uses a few games from each setup.
+A mutation swaps two seating positions within a game.
+
+Starting with completely random creatures, and continuously
+mutating through several million generations I have (so far)
+come down to a setup with 33 bad seatings.  This setup is
+probably marginally better than the one they're using now
+because it tried to eliminate bad partnering and bad tabling
+(but I can't know for sure until it quits).
+
+However, I came up with this great idea night before last.  I
+don't need to start with random creatures.  I should be able
+to seed the population with already proven creatures and let
+mutation and natural selection do its thing.  IT WORKS GREAT!
+I took the original setup, the 32 setup, and the 31 setup,
+made a few creatures of each type and started it.  It refined
+it a little bit and quit.  I added the refined one to the
+list of initial creatures, tweaked some options and ran again.
+After running two or three times I have come up with a setup
+over last night that has 29 bad seatings, no bad partnerings,
+and just a few bad tablings!  A HUGE improvement over the
+original setup.
+
+What's really slick is that I don't need to know which creatures
+are prime evolutionary candidates.  I just throw them all in
+together and let darwinism do it's trick.  It's like trying to
+get an ocean full of algea to mutate into a super-human but
+spiking the algea with a few humans and other animals to give
+it a head start.
+
+I started a new run just to make sure it doesn't get even better.
+I'm gonna make a little report and send it to Mom and Dad.  And
+this time my name will be clearly visible.  Can you tell that
+I'm proud of myself?
+
+Hmm, if I were finishing college, could I do a thesis on
+The Seating Arrangements Of A Game Of Bridge?
+--
+Paul Chamberlain  |  <I do NOT speak for IBM!>	| UNIX: tif@austin.ibm.com
+IBM AWS, I/O Dev  |  512/838-3759, IBM T/L 678	| IBM-VNET:  TIF AT AUSTIN
+

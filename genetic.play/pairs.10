@@ -1,0 +1,38 @@
+Sun Oct 13 17:32:50 CDT 2002	Running ./pairs -n 10 -g 9
+Population = 100	MaxIter = 100000000
+TermCount = 1000000	MaxSwap = 10
+Opt = 0
+Iteration Best Cnt  Score       Mutates   Cross-Ovr Inserts
+        0         1  90,  0         1         1         1 270   1
+    10000      4854  50,  0    181894     10000       570  50   1
+    20000      2529  40,  0    195211     10000       103  40   1
+
+    27198         0   0,  0    138464      7198       129  *
+
+
+Total Time = 22 seconds; Search Time = 20 seconds.
+Best Configuration:
+AB CD EF GH IJ
+DE CJ AH GF IB
+AG DI BJ EC HF
+IE JF CA BG DH
+AI DG EJ HB FC
+EA BD CG IF JH
+GE AF JD CB HI
+HC DF BE AJ GI
+GJ BF DA CI HE
+
+Score = 0
+Old Score = 0
+Bad partnerings
+  A B C D E F G H I J 
+A . 1 1 1 1 1 1 1 1 1
+B 1 . 1 1 1 1 1 1 1 1
+C 1 1 . 1 1 1 1 1 1 1
+D 1 1 1 . 1 1 1 1 1 1
+E 1 1 1 1 . 1 1 1 1 1
+F 1 1 1 1 1 . 1 1 1 1
+G 1 1 1 1 1 1 . 1 1 1
+H 1 1 1 1 1 1 1 . 1 1
+I 1 1 1 1 1 1 1 1 . 1
+J 1 1 1 1 1 1 1 1 1 .

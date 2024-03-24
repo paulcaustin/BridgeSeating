@@ -1,0 +1,10 @@
+#!/afs/austin/local/bin/perl
+
+while (<>) {
+	if (/(\d+,\s+\d+)/) {
+		if ($score != $1) {
+			$score = $1;
+			print;
+		}
+	}
+}

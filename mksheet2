@@ -1,0 +1,79 @@
+#!/usr/bin/perl
+$|++;
+
+while (<>) {
+	chop;
+	push(@lines, $_);
+}
+
+open(OUT, ">&STDOUT");
+for ($i=1; $i<25; $i++) {
+	&doplayer($i);
+	print OUT "<br><br>\n" if ($i % 3 > 0);
+}
+exit 0;
+
+
+sub doplayer {
+	my $player = shift;
+	$game = 0;
+
+print OUT <<EOF;
+<table border=0 width="99%"><tr>
+<th colspan=2>Player #$player</th>
+<th colspan=2>6 Table Tally</th>
+<td align=center colspan=1 width="20%"><font size=-3>
+Copyright 1999, Paul Chamberlain (tif\@pobox.com)<br>
+This notice required on all copies and derivatives
+</font></td></tr>
+<tr><td colspan=5>
+<table cellspacing=0 border=1 width="100%"><tr align=center>
+	<td colspan=2><font size=-1>Table 1</font></td>
+	<td colspan=2><font size=-1>Table 2</font></td>
+	<td colspan=2><font size=-1>Table 3</font></td>
+	<td colspan=2><font size=-1>Table 4</font></td>
+	<td colspan=2><font size=-1>Score</font></td></tr>
+EOF
+
+foreach (@lines) {
+	$game++;
+	print OUT "<tr>";
+	# print OUT "<td>$game</td>";
+	foreach $table (split) {
+		($a, $b, $c, $d) = split(//, $table);
+		$a = ord(uc($a)) - ord('A') + 1;
+		$b = ord(uc($b)) - ord('A') + 1;
+		$out1 = $a . "-" . $b;
+		$c = ord(uc($c)) - ord('A') + 1;
+		$d = ord(uc($d)) - ord('A') + 1;
+		$out2 = $c . "-" . $d;
+		# $out = $out .
+		#	"&nbsp;" x (11-length($out)-length($out1)) .
+		#	$out1;
+		if ($player==$a || $player==$b || $player==$c || $player==$d) {
+			print OUT "<th align=right><font size=+1>$out1</font></th>";
+			print OUT "<th align=left><font size=+1>$out2</font></th>";
+		} else {
+			print OUT "<td align=right>$out1</td>";
+			print OUT "<td align=left>$out2</td>";
+		}
+	}
+	print OUT "<td colspan=2>";
+	print OUT "&nbsp;&nbsp;&nbsp;&nbsp;";
+	print OUT "&nbsp;&nbsp;&nbsp;&nbsp;";
+	print OUT "&nbsp;&nbsp;&nbsp;&nbsp;";
+	print OUT "&nbsp;&nbsp;&nbsp;&nbsp;";
+	print OUT "&nbsp;&nbsp;&nbsp;&nbsp;";
+	print OUT "</td></tr>\n";
+}
+print OUT <<EOF;
+</table>
+</td></tr><tr>
+<td colspan=4 align=left>
+<font size=+2><nobr>Name: __________________</nobr></font></td>
+<td colspan=1 align=right>
+<font size=+2><nobr>Total Score: _________</nobr></font></td>
+</tr></table>
+EOF
+
+}

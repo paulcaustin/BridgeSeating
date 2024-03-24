@@ -1,0 +1,12 @@
+#!/bin/sh
+
+n=30
+while test $n -le 50
+do
+	g=`expr $n - 1`
+	cmd="./pairs -n $n -g $g -t 10000000"
+	echo "`date`	Running $cmd"
+	$cmd
+	n=`expr $n + 2`
+done
+date

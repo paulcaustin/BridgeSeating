@@ -1,0 +1,1 @@
+./node_modules/qunit/bin/cli.js --cov -c bridge.js -t t1.js 

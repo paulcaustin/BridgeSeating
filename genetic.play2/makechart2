@@ -1,0 +1,34 @@
+#!/usr/bin/perl
+
+@players = ();
+while (<>) {
+	chop;
+	$table = 0;
+	print "Table 0:\n";
+
+	foreach $c (split(//, $_)) {
+		if ($c eq ' ') {
+			$table++;
+			print "Table $table:\n";
+			next;
+		}
+		$c = "A";
+		$i = 0;
+		print "c='$c'\n";
+		print "Matches caps\n" if (($c ge 'A') and ($c le 'Z'));
+		print "Matches lower\n" if (($c ge 'a') and ($c le 'z'));
+		print "Matches number\n" if (($c ge '0') and ($c le '9'));
+		print "Matches other\n" if (($c ge '#') and ($c le '$'));
+
+		print "Player $i ($c=" . ord($c) . ")\n";
+		$d = ord('A');
+		print "ord(A)=$d\n";
+		push(@{$players[$i]}, $table);
+		exit;
+	}
+	print "\n";
+}
+
+for ($i = 0; $i < 64; $i++) {
+	print "$i: " . join(@{$players[$i]}) . "\n";
+}

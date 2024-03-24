@@ -1,0 +1,23 @@
+3000	READ("%ld", temp);
+2	READ("%ld", t_low);
+1	READ("%ld", t_min);
+40	READ("%ld", avg_score);
+4400	READ("%ld", scale);
+150	READ("%f", sigma);
+500	READ("%d", exg_cutoff);
+200	READ("%d", min_succ);
+500	READ("%d", lim_incount);
+1000	READ("%d", lim_outcount);
+4000	READ("%d", lim_first);
+20000	READ("%d", ultimate_lim);
+360	0.9
+215	0.92
+85	0.95
+60	0.96
+30	0.97
+15	0.98
+5	0.99
+0	0
+0	0
+0	0
+

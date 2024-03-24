@@ -1,0 +1,135 @@
+Population = 100	MaxIter = 100000000
+TermCount = 1000000	MaxSwap = 40
+Opt = 0
+Iteration  Best Cnt   Scores    Mutates Inst Best BMut Swap
+        0         0 1452-1856        90    1 1679    1 40
+
+    77672     32517 1334-1342    675346 1831  *
+
+
+Total Time = 19 seconds; Search Time = 19 seconds.
+Best Configuration:
+ABCD EFGH
+DHFG ABCE
+AEBH CGDF
+BHFG ACDE
+CDEF ABGH
+AHCG BFDE
+AFBE CDGH
+BDCH AFEG
+ACBF DEGH
+CEGH ADBF
+ADBG CHEF
+CEDF ABGH
+BDEH AGCF
+AGDE BCFH
+BCEG AFDH
+AEFH BCDG
+CFDG ABEH
+
+Stored Score = 1334
+
+Score = 1338
+Old Score = 140
+Bad seating
+  A B C D E F G H 
+A . 5 3 3 4 3 3 3
+B 5 . 4 4 4 3 3 4
+C 3 4 . 5 4 4 4 3
+D 3 4 5 . 4 4 4 3
+E 4 4 4 4 . 4 3 4
+F 3 3 4 4 4 . 3 3
+G 3 3 4 4 3 3 . 4
+H 3 4 3 3 4 3 4 .
+
+Bad partnerings
+  A B C D E F G H 
+A . 1 1 1 2 1 1 1
+B 1 . 1 2 1 1 1 2
+C 1 1 . 2 2 1 1 1
+D 1 2 2 . 1 1 1 1
+E 2 1 2 1 . 1 1 1
+F 1 1 1 1 1 . 2 1
+G 1 1 1 1 1 2 . 1
+H 1 2 1 1 1 1 1 .
+Bad tabling
+Table 1: 8 9 9 9 9 8 8 8 
+Table 2: 0 0 0 0 0 0 0 0 
+Population = 100	MaxIter = 100000000
+TermCount = 1000000	MaxSwap = 40
+Opt = 0
+Iteration  Best Cnt   Scores    Mutates Inst Best BMut Swap
+        0         1 1631-2049        90    1 1983    1 40
+   100000     49444 1420-1428    866783 2481 1420    1 40
+   200000     83418 1418-1424    890776  110 1418    1 21
+   300000     96038 1416-1422    882273   96 1416    1 11
+   400000    196038 1416-1420    893661   22 1416    2 6
+   500000    296038 1416-1420    896062    9 1418    2 4
+   600000    396038 1416-1420    895463    2 1418    2 4
+   700000    496038 1416-1420    894676    2 1419    2 4
+   800000    596038 1416-1420    894499    2 1418    2 4
+   900000    696038 1416-1420    890341    3 1418    1 4
+  1000000    796038 1416-2059    889139    4 1416    1 4
+  1100000     11356 1412-1418    884339  770 1412    1 4
+  1200000    111356 1412-1418    894579   25 1412    1 4
+  1300000    211356 1412-1417    891409   39 1412    1 4
+  1400000    311356 1412-1416    898807    9 1412    1 4
+  1500000    411356 1412-1416    899263    4 1412    2 4
+  1600000    511356 1412-1416    898803    3 1414    2 4
+  1700000    611356 1412-1416    897175    7 1412    1 4
+  1800000    711356 1412-1416    896490    0 999999    0 4
+  1900000    811356 1412-1416    896559    0 999999    0 8
+  2000000    911356 1412-2142    896533    1 1596    1 16
+
+  2088645   1000001 1412-1417    786314  733  *
+
+
+Total Time = 607 seconds; Search Time = 607 seconds.
+Terminated due to Maximum Patience Reached
+Best Configuration:
+ABCD EFGH
+ACFH BDEG
+BGDE AFCH
+AFCH BDEG
+BEFG ACDH
+AGDH BFCE
+BFCE ADGH
+ABDG CEFH
+CGEH AFBD
+BHDF ACEG
+ACEG BHDF
+BDCF AHEG
+AHBE CGDF
+CGDF ABEH
+AEDH BFCG
+BCGH AEDF
+ADEF BCGH
+
+Stored Score = 1412
+
+Score = 1412
+Old Score = 143
+Bad seating
+  A B C D E F G H 
+A . 3 4 5 4 3 3 5
+B 3 . 4 5 4 4 4 3
+C 4 4 . 3 3 5 4 4
+D 5 5 3 . 3 4 4 3
+E 4 4 3 3 . 3 4 3
+F 3 4 5 4 3 . 2 3
+G 3 4 4 4 4 2 . 3
+H 5 3 4 3 3 3 3 .
+
+Bad partnerings
+  A B C D E F G H 
+A . 2 2 1 1 1 1 1
+B 2 . 1 1 2 1 1 1
+C 2 1 . 1 1 1 2 1
+D 1 1 1 . 1 2 1 2
+E 1 2 1 1 . 1 1 1
+F 1 1 1 2 1 . 1 1
+G 1 1 2 1 1 1 . 1
+H 1 1 1 2 1 1 1 .
+Bad tabling
+Table 1: 9 9 9 9 8 8 8 8 
+Table 2: 0 0 0 0 0 0 0 0 

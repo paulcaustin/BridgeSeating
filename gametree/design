@@ -1,0 +1,30 @@
+This is the new design of a real tree-based
+bridge selecting logic.
+
+main
+	if filename given
+		restore
+	else
+		initialize
+	
+	setup
+	solve
+
+solve
+	while !solved
+		populate
+		prune
+		save
+
+populate
+	walk_tree add_to_leaf
+
+add_to_leaf
+	accumulate table-data in static
+	if leaf
+		add_children
+
+
+	begin
+0	a	b	c	d	e	...
+

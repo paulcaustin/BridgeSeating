@@ -1,0 +1,76 @@
+<title>Sample Scoring of a Bridge Seating Arrangement</title>
+<h1>Sample Scoring</h1>
+Each player is represented by a letter from A to X.
+Each group of four letters represents the players
+that are seated at a table for a single game.
+Each line represents a game.
+<p>
+Here is a seating arrangement:
+<pre>
+AEKM DFJX GINT BLRV HPCW OQSU
+PQBC AFOT DELW GJRU IMSX HKNV
+DMTU GKPX AHLQ BNFW JOCV IRES
+APIV EGCU DKOR BHTX FNLS JMQW
+BGLO CNRX EJPT FMQV DHIU AKSW
+ADGV BKJS FRPU HIOW ENQX CLMT
+BMHR DPSV CFIK AJNU GQTW ELOX
+UVWX IJKL MNOP EFGH ABCD QRST
+</pre>
+Here is a table which illustrates
+the seating repetitions.  This seating
+arrangement has 33 "bad seatings".
+You might notice that player F and
+player O are as close to perfect
+as they can be.  They play with
+every other player.
+<p>
+
+<table border>
+<caption>Seating Repetitions</caption>
+<tr><th width=4%> </th><th width=4%>A</th><th width=4%>B</th><th width=4%>C</th><th width=4%>D</th><th width=4%>E</th><th width=4%>F</th><th width=4%>G</th><th width=4%>H</th><th width=4%>I</th><th width=4%>J</th><th width=4%>K</th><th width=4%>L</th><th width=4%>M</th><th width=4%>N</th><th width=4%>O</th><th width=4%>P</th><th width=4%>Q</th><th width=4%>R</th><th width=4%>S</th><th width=4%>T</th><th width=4%>U</th><th width=4%>V</th><th width=4%>W</th><th width=4%>X</th></tr>
+<tr><th>A</th><td></td><td>1</td><td>1</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>2</td><td>1</td><td>0</td></tr>
+<tr><th>B</th><td>1</td><td></td><td>2</td><td>1</td><td>0</td><td>1</td><td>1</td><td>2</td><td>0</td><td>1</td><td>1</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>2</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td></tr>
+<tr><th>C</th><td>1</td><td>2</td><td></td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>2</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+<tr><th>D</th><td>2</td><td>1</td><td>1</td><td></td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
+<tr><th>E</th><td>1</td><td>0</td><td>1</td><td>1</td><td></td><td>1</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>2</td></tr>
+<tr><th>F</th><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td></td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+<tr><th>G</th><td>1</td><td>1</td><td>1</td><td>1</td><td>2</td><td>1</td><td></td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>2</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
+<tr><th>H</th><td>1</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td></td><td>2</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>2</td><td>1</td></tr>
+<tr><th>I</th><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>2</td><td></td><td>1</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+<tr><th>J</th><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td></td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
+<tr><th>K</th><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>2</td><td>2</td><td></td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>2</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td></tr>
+<tr><th>L</th><td>1</td><td>2</td><td>1</td><td>1</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td></td><td>1</td><td>1</td><td>2</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td></tr>
+<tr><th>M</th><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td></td><td>1</td><td>1</td><td>1</td><td>2</td><td>1</td><td>1</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+<tr><th>N</th><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td></td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>2</td></tr>
+<tr><th>O</th><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>2</td><td>1</td><td>1</td><td></td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+<tr><th>P</th><td>1</td><td>1</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td></td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>2</td><td>1</td><td>1</td></tr>
+<tr><th>Q</th><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>2</td><td>1</td><td>1</td><td>1</td><td></td><td>1</td><td>2</td><td>2</td><td>1</td><td>1</td><td>2</td><td>1</td></tr>
+<tr><th>R</th><td>0</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td></td><td>2</td><td>1</td><td>2</td><td>1</td><td>0</td><td>1</td></tr>
+<tr><th>S</th><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>2</td><td>1</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>2</td><td>2</td><td></td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+<tr><th>T</th><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>2</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>2</td><td>1</td><td>1</td><td>1</td><td>2</td><td>1</td><td>1</td><td></td><td>1</td><td>0</td><td>1</td><td>1</td></tr>
+<tr><th>U</th><td>1</td><td>0</td><td>1</td><td>2</td><td>1</td><td>1</td><td>2</td><td>1</td><td>1</td><td>2</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>2</td><td>1</td><td>1</td><td></td><td>1</td><td>1</td><td>1</td></tr>
+<tr><th>V</th><td>2</td><td>1</td><td>1</td><td>2</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>2</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td></td><td>1</td><td>1</td></tr>
+<tr><th>W</th><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>2</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td></td><td>1</td></tr>
+<tr><th>X</th><td>0</td><td>1</td><td>1</td><td>1</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td></td></tr>
+</table>
+<p>
+
+There is also another table which I have used in
+some of my implementations to try to eliminate
+the undesirable effect of sitting at the same
+table for each of the six games.
+<p>
+
+<table border>
+<caption>Table Repetitions</caption>
+<tr><th width=4%> </th><th width=4%>A</th><th width=4%>B</th><th width=4%>C</th><th width=4%>D</th><th width=4%>E</th><th width=4%>F</th><th width=4%>G</th><th width=4%>H</th><th width=4%>I</th><th width=4%>J</th><th width=4%>K</th><th width=4%>L</th><th width=4%>M</th><th width=4%>N</th><th width=4%>O</th><th width=4%>P</th><th width=4%>Q</th><th width=4%>R</th><th width=4%>S</th><th width=4%>T</th><th width=4%>U</th><th width=4%>V</th><th width=4%>W</th><th width=4%>X</th></tr>
+<tr><th>1</th><td>3</td><td>3</td><td>1</td><td>2</td><td>1</td><td>0</td><td>2</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>3</td><td>0</td><td>1</td><td>2</td><td>1</td><td>1</td><td>0</td><td>1</td><td>2</td><td>3</td><td>1</td><td>1</td></tr>
+<tr><th>2</th><td>1</td><td>1</td><td>2</td><td>2</td><td>1</td><td>2</td><td>2</td><td>0</td><td>1</td><td>3</td><td>3</td><td>1</td><td>0</td><td>1</td><td>1</td><td>2</td><td>0</td><td>1</td><td>2</td><td>1</td><td>1</td><td>1</td><td>0</td><td>3</td></tr>
+<tr><th>3</th><td>1</td><td>0</td><td>1</td><td>2</td><td>2</td><td>2</td><td>1</td><td>1</td><td>2</td><td>1</td><td>2</td><td>2</td><td>1</td><td>2</td><td>2</td><td>3</td><td>1</td><td>2</td><td>0</td><td>2</td><td>1</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><th>4</th><td>1</td><td>3</td><td>0</td><td>0</td><td>1</td><td>3</td><td>2</td><td>3</td><td>1</td><td>2</td><td>0</td><td>1</td><td>1</td><td>2</td><td>1</td><td>0</td><td>1</td><td>2</td><td>0</td><td>1</td><td>2</td><td>2</td><td>2</td><td>1</td></tr>
+<tr><th>5</th><td>1</td><td>1</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>2</td><td>2</td><td>1</td><td>0</td><td>1</td><td>1</td><td>2</td><td>1</td><td>1</td><td>2</td><td>0</td><td>2</td><td>1</td><td>1</td><td>1</td><td>2</td><td>2</td></tr>
+<tr><th>6</th><td>1</td><td>0</td><td>1</td><td>0</td><td>2</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>2</td><td>2</td><td>2</td><td>1</td><td>2</td><td>0</td><td>3</td><td>2</td><td>4</td><td>2</td><td>1</td><td>1</td><td>2</td><td>1</td></tr>
+</table>
+<br clear=all><hr><address>
+<a href="/~tif/">Paul Chamberlain</a><br>
+<a href="mailto:paul@paulcc.com">paul@paulcc.com</a></address>

@@ -1,0 +1,53 @@
+Sun Oct 13 17:34:10 CDT 2002	Running ./pairs -n 14 -g 13
+Population = 100	MaxIter = 100000000
+TermCount = 1000000	MaxSwap = 10
+Opt = 0
+Iteration Best Cnt  Score       Mutates   Cross-Ovr Inserts
+        0         1 230,  0         1         1         1 440   1
+    10000       962 140,  0    179330     10000       772 140   1
+    20000       807  90,  0    186402     10000       386  90   1
+    30000      4227  60,  0    186322     10000       348  60   1
+    40000      7931  30,  0    191889     10000       153  30   1
+    50000      5555  20,  0    192514     10000       116  20   1
+    60000     15555  20,  0    193790     10000        58  20   1
+    70000     25555  20,  0    196011     10000        42  20   1
+    80000     35555  20,  0    197645     10000        26  20   1
+    90000     45555  20,  0    197438     10000        38  20   1
+
+    90539         0   0,  0     10647       539         1  *
+
+
+Total Time = 87 seconds; Search Time = 84 seconds.
+Best Configuration:
+AB CD EF GH IJ KL MN
+IE HN MF DJ KB AL CG
+FN BI LD KC MH JA GE
+BM EA CH DK GN FJ IL
+JC AN GK BD ME LH FI
+KE GA HD JN BF IC LM
+KJ BG DA FH NI MC EL
+IM FA BC DE LN GJ HK
+CL EJ GM BN AK DF HI
+GF EN AC DI MK BH LJ
+FC EB DM LG AI JH NK
+KF HA EC IG LB MJ ND
+KI LF DG MA BJ HE NC
+
+Score = 0
+Old Score = 0
+Bad partnerings
+  A B C D E F G H I J K L M N 
+A . 1 1 1 1 1 1 1 1 1 1 1 1 1
+B 1 . 1 1 1 1 1 1 1 1 1 1 1 1
+C 1 1 . 1 1 1 1 1 1 1 1 1 1 1
+D 1 1 1 . 1 1 1 1 1 1 1 1 1 1
+E 1 1 1 1 . 1 1 1 1 1 1 1 1 1
+F 1 1 1 1 1 . 1 1 1 1 1 1 1 1
+G 1 1 1 1 1 1 . 1 1 1 1 1 1 1
+H 1 1 1 1 1 1 1 . 1 1 1 1 1 1
+I 1 1 1 1 1 1 1 1 . 1 1 1 1 1
+J 1 1 1 1 1 1 1 1 1 . 1 1 1 1
+K 1 1 1 1 1 1 1 1 1 1 . 1 1 1
+L 1 1 1 1 1 1 1 1 1 1 1 . 1 1
+M 1 1 1 1 1 1 1 1 1 1 1 1 . 1
+N 1 1 1 1 1 1 1 1 1 1 1 1 1 .

@@ -1,0 +1,45 @@
+define c(n,r) {
+	auto i
+	auto t
+
+	t = 1
+	for (i=0; i<r; i++) {
+		t = t * (n-i)
+	}
+	for (i=0; i<r; i++) {
+		t = t/(i+1)
+	}
+	return(t)
+}
+
+
+define d(x) {
+	auto n
+	auto y
+
+	y = x
+	n = 0
+	while (y > 0) {
+		y = y/10
+		n = n+1
+	}
+	return(n)
+}
+
+
+"bridge number one round:
+   x=c(24,4)*c(20,4)*c(16,4)*c(12,4)*c(8,4)
+   x="
+x=c(24,4)*c(20,4)*c(16,4)*c(12,4)*c(8,4)
+x
+"digits in x="
+d(x)
+"
+bridge number eight rounds:
+   y=c(x,8)
+   y="
+y=c(x,8)
+y
+"digits in y="
+d(y)
+quit
